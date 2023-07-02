@@ -51,6 +51,7 @@
             this.maskedTextBox1.Size = new System.Drawing.Size(119, 27);
             this.maskedTextBox1.TabIndex = 1;
             this.maskedTextBox1.ValidatingType = typeof(int);
+            this.maskedTextBox1.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
             // 
             // button1
             // 
@@ -74,7 +75,7 @@
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Giris";
             this.Text = "Giris";
             this.Load += new System.EventHandler(this.Giris_Load);

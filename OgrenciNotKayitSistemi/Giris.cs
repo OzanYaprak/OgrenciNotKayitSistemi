@@ -30,5 +30,14 @@ namespace OgrenciNotKayitSistemi
 
             detay.Show();
         }
+
+        private void maskedTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text=="0101")
+            {
+                OgretmenDetay ogretmenDetay = new OgretmenDetay();
+                ogretmenDetay.Show();
+            }
+        }
     }
 }
